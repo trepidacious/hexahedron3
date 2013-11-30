@@ -1,0 +1,193 @@
+	<!--This style is designed by Ben Webster. If you want to use this style
+		please let me know at trepidacious@gmail.com
+		The graphics used by this style are from the Hexahedron, 
+		Java engine, and colours and layout have also been modified.
+		This is based on a style designed by Kenneth Barbour.
+		If you use this design, please let him know at kenbarbour@gmail.com.
+		The Original CSS code is by Anthony Yeung-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Hexahedron</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="top">
+				<div id="title"></div>
+			</div>
+			<div id="middle">
+				<div id="nav">
+				</div>
+				<div id="content">
+					<div id="side">
+						<strong>Open Source</strong>
+						<br />
+						<br />
+						Hexahedron and this page are open source, and built using open source tools and resources, including those listed below:
+						<br />
+						<br />
+						<br />
+		
+						<strong>Links</strong>
+						<br />
+
+						<br />
+						<a href="http://sourceforge.net/projects/hexahedron/">Hexahedron Project Page</a>
+						<br />
+
+						<br />
+						<a href="http://jmonkeyengine.com/">jMonkeyEngine</a>
+						<br />
+		
+						<br />
+						<a href="http://www.blender3d.org">Blender</a>
+						<br />
+		
+						<br />
+						<a href="http://gimp.org/">Gimp</a>
+						<br />		
+		
+						<br />
+						<a href="http://lwjgl.org/">LWJGL</a>
+						<br />
+		
+						<br />
+						<a href="http://oswd.org/">Open Source Web Design</a>
+						<br />
+		
+						<br />
+						<a href="http://www.axiscreations.com/">Axis Creations</a> (basis for CSS)
+						<br />
+		
+						<br />
+						<br />
+					</div>
+		
+		
+					<h2>The Hexahedron Game Engine</h2>
+					<p> 
+						Hexahedron is a <a href="http://java.sun.com">Java</a> 
+						game engine based on the <a href="http://jmonkeyengine.com/">jMonkeyEngine</a> 
+						graphics engine.
+						<br />
+						In hexahedron, the world consists of only cubes (hexahedra).
+						This allows for complete implementations of everything required 
+						for a game (lighting, physics, AI, level editing etc.), with much less
+						code and effort both within the engine and in games using it. The cube
+						system may be simple, but it still gives full scope for complex level designs
+						in a variety of game types.
+						<a href="images/shot.jpg"><img src="images/shotShadow.png" alt="Hexahedron Screen Shot"/></a>
+						<br/>
+						<a href="images/complex.jpg">More complex screenshot </a>
+					</p>
+		
+		
+					<h2>Current Status</h2>
+					<p>
+						Hexahedron is currently in early development, so to try it you will need to get
+						the code from SVN on the <a href="http://sourceforge.net/projects/hexahedron/">project page</a>, but already some key features
+						are implemented:
+						<ul>
+							<li>
+								Static world made of cubes. Uses an 
+								<a href="http://en.wikipedia.org/wiki/Octree">octree</a> for efficient drawing
+							</li>
+							<li>
+								Perfectly accurate dynamic <a href="http://en.wikipedia.org/wiki/Ambient_occlusion">ambient occlusion lighting</a> of cubes
+							</li>
+							<li>
+								Perfectly accurate dynamic directional (sun) lighting of cubes
+							</li>
+							<li>
+								Swept <a href="http://en.wikipedia.org/wiki/Collision_detection">collision detection</a> between moving
+								cuboids (e.g. players, objects) and the world. This is both integer accurate (allowing for perfect sliding "logic" in 
+								puzzle games) and fast. Since the detection is swept, it is impossible for objects to move "through" the world, even
+								when moving at high speed.
+							</li>
+							<li>
+								Basic "FPS" physics, allowing for moving cuboids (e.g. players) to slide 
+								along walls, fall, jump etc. This will be extended to more complex physics 
+								like friction, bouncing, etc.
+							</li>
+						</ul>
+					</p>
+					<p>
+						There is a simple demonstration of these features in the form of an FPS-style game where the player can walk and jump
+						through a level.
+					</p>
+					<br/>
+		
+					<h2>Development</h2>
+					<p>
+						Development is currently concentrating on making a playable game, where the player must run and jump through
+						a series of obstacles. This is designed to test and demonstrate the engine, but should hopefully also be an
+						enjoyable game in itself. Additional features required to implement this system include:
+						<ul>
+							<li>
+						 		Improved player handling such as crouching, better jumping control, and perhaps jumping to ledges, etc.
+							</li>
+							<li>
+								Collision detection between moving objects - for example obstacles like spikes and blades colliding with the player.
+							</li>
+							<li>
+								Simple entity/property system for player and obstacle properties like health, damage amounts, etc.
+							</li>
+							<li>
+								Annotation system to give properties to cubes and cube faces, for example to make bouncy faces, points that can be grabbed onto, etc.
+							</li>
+						</ul>
+					</p>
+					<br/>
+		
+					<h2>Resources</h2>
+					<p> 
+						The graphical and other resources (and soon also the original blender and gimp files) for the
+						game, and this page, are available under a Creative Commons licence:
+						<br />
+						<br />
+						<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+							<img alt="Creative Commons License" style="border-width:0" src="images/somerights20.png" />
+						</a>
+						<br />
+						<span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dc:title" rel="dc:type">Hexahedron Resources</span>
+						 by 
+						 <a xmlns:cc="http://creativecommons.org/ns#" href="http://hexahedron.sourceforge.net/" property="cc:attributionName" rel="cc:attributionURL">Hexahedron</a> 
+						 is licensed under a 
+						 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+						 	Creative Commons Attribution-Non-Commercial-Share Alike 3.0 Unported License
+						 </a>.
+
+					</p>
+		
+					<br/>
+		
+					<h2><a href="http://www.ffii.org/">Software Patents</a></h2>
+					<p> 
+						Software Patents are a threat to Hexahedron and many
+						other far more important open source projects, as well as to basic freedoms.
+						Apathy will let this kind of thing succeed against reason and popular feeling 
+						- you can find out how to help at the <a href="http://www.ffii.org/">FFII page</a>.
+					</p>
+		
+				</div>
+			</div>
+		</div>
+	
+		<div id="bottom">&nbsp;</div>
+	
+		<div id="footertext">
+			<a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=240384&amp;type=2" width="125" height="37" border="0" alt="SourceForge.net Logo" /></a>
+			<br />
+			<a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a> 
+			&nbsp;|&nbsp; 
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a> 
+			&nbsp;|&nbsp; 
+			Copyright 2005 &copy; puzzlebeans &nbsp; 
+		</div>
+	
+	</body>
+
+</html>
